@@ -27,7 +27,7 @@ date: 2026-02-27 22:23:13
 接下來就實際紀錄解決步驟
 
 主要的原因在於OS層級網卡上的WoL功能沒有啟用，為d (Disabled)這狀態，詳細的資訊可以透過`ethtool <nic-name>`來查看。
-![ethtool-details](/esxi-certificate-renew/ethtool-details.png)
+![ethtool-details](/proxmox-ve-node-wol/ethtool-details.png)
 
 可以看到列出的詳細資訊內，有欄Wake-on狀態，上圖示已經調整過後的截圖，原先是顯示d，表示停用，所以我們需要將它改成啟用的狀態g (MagicPacket)。
 
