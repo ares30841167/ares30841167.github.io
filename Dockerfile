@@ -1,4 +1,4 @@
-FROM node:25.6.1
+FROM node:25.8.0
 
 LABEL maintainer="Ares Chen <areschentw@outlook.com>"
 
